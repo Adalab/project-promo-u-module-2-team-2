@@ -1,10 +1,99 @@
 <fieldset class="form__fieldset">
   <legend class="form__title">
-    <a class="form__icon fa-light fa-keyboard"></a>
+    <i class="fas fa-keyboard form__icon"></i>
     rellena
-    <a class="form__icon"></a>
+    <a class="fas fa-chevron-up form__icon"></a>
   </legend>
-  <form class="formFill">
-    <!--FORMULARIO PEQUEÑO -->
-  </form>
+  <!--Nombre-->
+  <section class="sectionFill">
+    <label class="form__label" for="name">
+      Nombre completo
+      <input
+        class=""
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Ej: Sally Jill"
+        required
+      />
+    </label>
+
+    <!--Puesto-->
+    <label class="form__label" for="position">
+      Puesto
+      <input
+        class=""
+        id="position"
+        type="text"
+        name="position"
+        placeholder="Ej: Front-end unicorn"
+        required
+      />
+    </label>
+
+    <!--Imagen de perfil-->
+    <div class="">
+      <label class="form__label" for="position">Imagen de perfil</label>
+    </div>
+    <div class="">
+      <label class="form__picButton" for="image-selector">Añadir imagen</label>
+      <input class="" type="file" value="Añadir imagen" />
+      <div class="square"></div>
+    </div>
+
+    <!--Email-->
+    <label class="form__label" for="email">
+      Email
+      <input
+        class=""
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Ej: sally-hill@gmail.com"
+        required
+      />
+    </label>
+
+    <!--Teléfono-->
+    <label class="form__label" for="telephone">
+      Teléfono
+      <input
+        class=""
+        id="telephone"
+        type="tel"
+        name="telephone"
+        pattern=""
+        placeholder="Ej: 555-55-55-55"
+        required
+      />
+    </label>
+
+    <!--Linkedin-->
+    <label class="form__label" for="linkedin">
+      Puesto
+      <input
+        class=""
+        id="linkedin"
+        type="url"
+        name="linkedin"
+        pattern=""
+        placeholder="Ej: linkedin.com/in/sally.hill"
+        required
+      />
+    </label>
+
+    <!--Github-->
+    <label class="form__label" for="github">
+      Puesto
+      <input
+        class=""
+        id="github"
+        type="url"
+        name="github"
+        pattern=""
+        placeholder="Ej: @sally-hill"
+        required
+      />
+    </label>
+  </section>
 </fieldset>
