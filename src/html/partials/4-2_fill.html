@@ -1,15 +1,20 @@
 <fieldset class="form__fieldset">
   <legend class="form__title">
-    <i class="fas fa-keyboard form__icon"></i>
-    rellena
-    <a class="fas fa-chevron-up form__icon"></a>
+    <div class="first">
+      <i class="fas fa-keyboard form__icon"></i>
+      <h2 class="h2_first">rellena</h2>
+    </div>
+    <div class="second">
+      <a class="fas fa-chevron-up form__iconArrow"></a>
+    </div>
   </legend>
+
   <!--Nombre-->
   <section class="sectionFill">
     <label class="form__label" for="name">
       Nombre completo
       <input
-        class=""
+        class="form__input"
         id="name"
         type="text"
         name="name"
@@ -22,7 +27,7 @@
     <label class="form__label" for="position">
       Puesto
       <input
-        class=""
+        class="form__input"
         id="position"
         type="text"
         name="position"
@@ -32,12 +37,12 @@
     </label>
 
     <!--Imagen de perfil-->
-    <div class="">
-      <label class="form__label" for="position">Imagen de perfil</label>
-    </div>
-    <div class="">
-      <label class="form__picButton" for="image-selector">Añadir imagen</label>
-      <input class="" type="file" value="Añadir imagen" />
+
+    <label class="form__label" for="position">Imagen de perfil</label>
+
+    <div class="form__image">
+      <label class="picButton" for="image-selector"></label>
+      <input class="form__picButton" type="button" value="Añadir imagen" />
       <div class="square"></div>
     </div>
 
@@ -45,7 +50,7 @@
     <label class="form__label" for="email">
       Email
       <input
-        class=""
+        class="form__input"
         id="email"
         type="email"
         name="email"
@@ -58,7 +63,7 @@
     <label class="form__label" for="telephone">
       Teléfono
       <input
-        class=""
+        class="form__input"
         id="telephone"
         type="tel"
         name="telephone"
@@ -70,9 +75,9 @@
 
     <!--Linkedin-->
     <label class="form__label" for="linkedin">
-      Puesto
+      Linkedin
       <input
-        class=""
+        class="form__input"
         id="linkedin"
         type="url"
         name="linkedin"
@@ -84,9 +89,9 @@
 
     <!--Github-->
     <label class="form__label" for="github">
-      Puesto
+      Github
       <input
-        class=""
+        class="form__input"
         id="github"
         type="url"
         name="github"
