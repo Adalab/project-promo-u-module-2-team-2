@@ -12,7 +12,7 @@ body {
     align-items: center;
     gap: 40px;
     font-family: $font-open;
-    font-size: 14px;
+    font-size: $small;
     color: $color-dark-green-blue;
     background-color: $color-white-four;
     text-align: center;
@@ -37,7 +37,7 @@ body {
     }
 
     &__title {
-        font-size: 19px;
+        font-size: $extralarge;
         color: $color-orange;
         font-family: $font-merri;
     }
@@ -74,7 +74,8 @@ body {
         background-color: $color-dirty-blue;
         padding: 10px 20px;
         color: $color-white-two;
-        font-size: 16px;
+        font-size: $medium;
         text-transform: uppercase;
+        text-decoration: none;
     }
 }
