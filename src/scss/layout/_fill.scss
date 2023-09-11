@@ -1,73 +1,87 @@
-.form__fieldset {
-  margin: 1.5rem;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.form {
+  padding: 27px 20px;
 
-  .form__title {
-    color: $color-gunmetal;
-    font-family: $font-open;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    padding: 0.5rem;
-
-    .form__icon {
-      color: $color-orange;
-    }
-
-    .form__iconArrow {
-      color: $color-gunmetal;
-    }
+  &__fieldset {
+    border: 0;
+    border-bottom: 1px solid lightgrey;
   }
-}
 
-.sectionFill {
-  margin: 0.5rem 0;
+  &__title {
+    color: $color-gunmetal;
+    text-transform: uppercase;
+    font-family: $font-open;
+    font-weight: $semiBold;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
 
-  .form__label {
+  &__icon {
+    color: $color-orange;
+    font-size: 20px;
+  }
+
+  &__arrow {
+    color: $color-gunmetal;
+    margin-left: auto;
+  }
+
+  &__fill {
+    //background-color: aquamarine;
+    margin-top: 1rem;
+  }
+
+  &__label {
     display: block;
     color: $color-dark-green-blue;
     font-family: $font-open;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
   }
 
-  .form__input {
+  &__input {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 1.5rem 0;
     padding: 0.5rem;
-    width: 90vw;
+    width: 100%;
     font-family: $font-open;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     border: solid 1px $color-hospital-green;
   }
 
-  .form__image {
-    display: flex;
-    justify-content: flex-start;
+}
 
-    .form__picButton {
-      background-color: $color-orange;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      padding: 0.5rem 1rem;
-      font-family: $font-open;
-      color: $color-white-two;
-      border: none;
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-    }
+.form__image {
+  display: flex;
 
-    .square {
-      border: solid 1px $color-hospital-green;
-      width: 2rem;
-      height: 2rem;
-      margin-left: 2rem;
-    }
+  .btnPic {
+    background-color: $color-orange;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: $font-open;
+    font-size: 1.3rem;
+    width: 14rem;
+    height: 3rem;
+    color: $color-white-two;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .square {
+    border: solid 1px $color-hospital-green;
+    width: 3rem;
+    height: 3rem;
+    margin-left: auto;
   }
 }
+
+
