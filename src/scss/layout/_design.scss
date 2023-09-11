@@ -1,0 +1,96 @@
+/* Base de Diana */
+
+.test {
+    background-color: bisque;
+}
+
+.form {
+    padding: 27px 20px;
+
+    &__fieldset {
+        border: 0;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    &__title {
+        color: $gunmetal;
+        text-transform: uppercase;
+        font-family: $font-open;
+        font-weight: $semiBold;
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    &__icon {
+        color: $color-orange;
+        font-size: 20px;
+    }
+
+    &__arrow {
+        color: $gunmetal;
+        margin-left: auto;
+    }
+}
+
+.colors {
+    padding: 22px 0;
+
+    &__title {
+        font-family: $font-open;
+        font-weight: $regular;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: -4px;
+        margin-left: 19px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    &__palette {
+        display: flex;
+    }
+
+}
+
+.divColors {
+    width: 30px;
+    height: 25px;
+}
+
+.bluePalette:nth-of-type(1) {
+    background-color: $color-dark-green-blue; /* #114e4e */
+}
+.bluePalette:nth-of-type(2) {
+    background-color: $color-dirty-blue; /* #438792 */
+}
+.bluePalette:nth-of-type(3) {
+    background-color: $color-hospital-green; /* #a2deaf */
+}
+.orangePalette:nth-of-type(1) {
+    background-color: $color-dried-blood; /* #420101 */
+}
+.orangePalette:nth-of-type(2) {
+    background-color: $color-rusty-red; /* #bd1010 */
+}
+.orangePalette:nth-of-type(3) {
+    background-color: $color-orange; /* #e17334 */
+}
+.neutralPalette:nth-of-type(1) {
+    background-color: $color-slate; /* #3e5b65 */
+}
+.neutralPalette:nth-of-type(2) {
+    background-color: $color-faded-orange; /* #eab052 */;
+}
+.neutralPalette:nth-of-type(3) {
+    background-color: $color-light-grey-blue; /* #a0c0cf */;
+}
