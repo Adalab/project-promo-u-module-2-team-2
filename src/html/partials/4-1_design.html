@@ -1,12 +1,43 @@
 <fieldset class="form__fieldset">
   <legend class="form__title">
-    <a class="form__icon fa-sharp fa-light fa-object-ungroup"></a>
+    <span class="form__icon fa-regular fa-object-ungroup"></span>
     diseña
-    <a class="form__icon"></a>
+    <span class="form__icon form__arrow fa-solid fa-chevron-down"></span>
   </legend>
-  <label class="colors" for="colors">colores</label>
-  <input type="checkbox" />
-  <input type="checkbox" />
-  <input type="checkbox" />
-  <!--ventanitas de colores div con background o paint-->
+  <div class=" colors">    
+    <label class="colors__title">colores</label>
+    <div class="colors__container">
+        <input type="radio"
+                 id="blue"
+               name="palette"
+              value="blue"/>                       
+        <label for="blue" class="colors__palette">
+            <div class="divColors bluePalette"></div>
+            <div class="divColors bluePalette"></div>
+            <div class="divColors bluePalette"></div>
+        </label>
+    </div>
+    <div class="colors__container">
+        <input type="radio" 
+                 id="orange"
+               name="palette" 
+              value="orange"/>
+        <label for="orange" class="colors__palette">
+            <div class="divColors orangePalette"></div>
+            <div class="divColors orangePalette"></div>
+            <div class="divColors orangePalette"></div>
+        </label>
+    </div>
+    <div class="colors__container">
+          <input type="radio" 
+                   id="neutral"
+                 name="palette" 
+                value="neutral"/>
+    <label for="neutral" class="colors__palette">
+        <div class="divColors neutralPalette"></div>
+        <div class="divColors neutralPalette"></div>
+        <div class="divColors neutralPalette"></div>
+    </label>
+    </div>
+  </div>
 </fieldset>
