@@ -5,3 +5,19 @@
 @import 'layout/fill';
 @import 'layout/share';
 @import 'layout/footer';
+
+.collapsed {
+  .form__title {
+    cursor: pointer;
+
+    .form__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  .form__design,
+  .form__fill,
+  .form__share {
+    display: none;
+  }
+}
