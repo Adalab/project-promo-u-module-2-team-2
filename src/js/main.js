@@ -12,7 +12,6 @@ const shareForm = document.querySelector('.js_share_form');
 //funciones
 
 function handleClickDesignLegend() {
-  console.log('holis');
   openDesign();
   collapseFill();
   collapseShare();
