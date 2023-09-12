@@ -1,61 +1,39 @@
 'use strict';
 
 //creamos variables
-
-const designLegend = document.querySelector('.js_design_legend');
-const fillLegend = document.querySelector('.js_fill_legend');
-const shareLegend = document.querySelector('.js_share_legend');
-const designForm = document.querySelector('.js_design_form');
+const form = document.querySelector('.js-currentTarget'); /* form */
+const designForm = document.querySelector('.js_design_form'); /* divs */
 const fillForm = document.querySelector('.js_fill_form');
 const shareForm = document.querySelector('.js_share_form');
 
 //funciones
-
-function handleClickDesignLegend() {
-  console.log('holis');
-  openDesign();
-  collapseFill();
-  collapseShare();
+function openDiv(div) {
+  /* para abrir los divs */
+  div.classList.remove('collapsed');
+  if (div === designForm) {
+    fillForm.classList.add('collapsed');
+    shareForm.classList.add('collapsed');
+  } else if (div === fillForm) {
+    designForm.classList.add('collapsed');
+    shareForm.classList.add('collapsed');
+  } else if (div === shareForm) {
+    designForm.classList.add('collapsed');
+    fillForm.classList.add('collapsed');
+  }
 }
 
-function handleClickFillLegend() {
-  collapseDesign();
-  openFill();
-  collapseShare();
-}
-
-function handleClickShareLegend() {
-  collapseDesign();
-  collapseFill();
-  openShare();
-}
-
-function openDesign() {
-  designForm.classList.remove('collapsed');
-}
-
-function collapseDesign() {
-  designForm.classList.add('collapsed');
-}
-
-function openFill() {
-  fillForm.classList.remove('collapsed');
-}
-
-function collapseFill() {
-  fillForm.classList.add('collapsed');
-}
-
-function openShare() {
-  shareForm.classList.remove('collapsed');
-}
-
-function collapseShare() {
-  shareForm.classList.add('collapsed');
+// Evento para manejar el clic en las leyendas
+function handleClickLegend(event) {
+  if (event.target.classList.contains('form__title')) {
+    if (designForm.contains(event.target)) {
+      openDiv(designForm);
+    } else if (fillForm.contains(event.target)) {
+      openDiv(fillForm);
+    } else if (shareForm.contains(event.target)) {
+      openDiv(shareForm);
+    }
+  }
 }
 
 //eventos
-console.log(designLegend);
-designLegend.addEventListener('click', handleClickDesignLegend);
-fillLegend.addEventListener('click', handleClickFillLegend);
-shareLegend.addEventListener('click', handleClickShareLegend);
+form.addEventListener('click', handleClickLegend);
