@@ -10,83 +10,47 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9c67de0d99.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Para que se puedan ver los iconos -->
   </head>
 
   <body>
-    <include
-      src="./partials/1_header.html"
-      title="Otra página del starter kit"
-    ></include>
-
-    <main>
-      <section>
-        <button>
-          <img src="" alt="" />
-          reset
-        </button>
-        <article>
+    <section class="landing">
+      <header class="landing__header">
+        <img
+          src="./assets/images/logo-cards.svg"
+          alt="Logo"
+          class="landing__img"
+        />
+        <section class="landing__titles">
+          <h1 class="landing__title">Crea tu tarjeta de visita</h1>
+          <p>Crea mejores contactos profesionales de forma fácil y cómoda</p>
+        </section>
+        <section class="landing__icons">
           <div>
-            <h2>Nombre Apellido</h2>
-            <h3>Front-end developer</h3>
+            <i class="fa-sharp fa-solid fa-object-ungroup landing__icon"></i>
+            <p>Diseña</p>
           </div>
-          <img src="" alt="" />
-          <nav>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-          </nav>
-        </article>
-      </section>
-
-      <section>
-        <form action="">
-          <fieldset>
-            <legend>
-              <img src="" alt="" />
-              diseña
-              <img src="" alt="" />
-            </legend>
-            <label for="colors">colores</label>
-            <input type="checkbox" />
-            <input type="checkbox" />
-            <input type="checkbox" />
-            <!--ventanitas de colores div con background o paint-->
-          </fieldset>
-
-          <fieldset>
-            <legend>
-              <img src="" alt="" />
-              rellena
-              <img src="" alt="" />
-            </legend>
-            <form>
-              <!--FORMULARIO PEQUEÑO -->
-            </form>
-          </fieldset>
-          <fieldset>
-            <legend>
-              <img src="" alt="" />
-              comparte
-              <img src="" alt="" />
-            </legend>
-            <a href="">
-              <img src="" alt="" />
-              crear tarjeta
-            </a>
-          </fieldset>
-          <section>
-            <h2>La tarjeta ha sido creada:</h2>
-            <!--https://awesome-profile-card.com?id=A456DF0001-->
-            <a href="">
-              <img src="" alt="" />
-              Compartir en twitter
-            </a>
-          </section>
-        </form>
-      </section>
-    </main>
+          <div>
+            <i class="fa-solid fa-keyboard landing__icon"></i>
+            <p>Rellena</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-share-nodes landing__icon"></i>
+            <p>Comparte</p>
+          </div>
+        </section>
+      </header>
+      <main class="landing__main">
+        <a href="creatingCard.html" class="landing__btn">comenzar</a>
+      </main>
+    </section>
 
     <include src="./partials/footer.html"></include>
 
