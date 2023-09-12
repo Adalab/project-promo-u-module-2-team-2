@@ -7,7 +7,8 @@ const fillForm = document.querySelector('.js_fill_form');
 const shareForm = document.querySelector('.js_share_form');
 
 //funciones
-function openDiv(div) { /* para abrir los divs */
+function openDiv(div) {
+  /* para abrir los divs */
   div.classList.remove('collapsed');
   if (div === designForm) {
     fillForm.classList.add('collapsed');
