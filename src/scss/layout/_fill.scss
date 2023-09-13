@@ -1,5 +1,4 @@
 .form {
-  padding: 27px 20px;
 
   &__fieldset {
     border: 0;
@@ -39,6 +38,7 @@
     font-family: $font-open;
     font-size: $small;
     margin-bottom: 1rem;
+    
   }
 
   &__input {
@@ -49,6 +49,13 @@
     font-family: $font-open;
     font-size: $small;
     border: solid 1px $color-hospital-green;
+
+  &::placeholder {
+      color: #c5c5c5;
+    }
+    &:focus {
+      background-color: $color-white-four;
+    }
   }
 
 }
