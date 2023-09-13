@@ -1,4 +1,14 @@
-
-
-
-
+.header {
+  display: flex;
+}
+.header__container {
+  display: flex;
+  margin-left: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.header__img {
+  display: flex;
+  width: 20rem;
+  height: 5rem;
+}
