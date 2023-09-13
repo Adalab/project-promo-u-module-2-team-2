@@ -12,3 +12,8 @@
   width: 20rem;
   height: 5rem;
 }
+@media all and (min-width: 768px){
+  .header__img {
+    margin-left: 40px;
+  }
+}
