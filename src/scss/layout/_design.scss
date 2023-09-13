@@ -17,7 +17,7 @@
         text-transform: uppercase;
         font-family: $font-open;
         font-weight: $semiBold;
-        font-size: 18px;
+        font-size: $large;
         width: 100%;
         display: flex;
         align-items: center;
@@ -42,7 +42,7 @@
     &__title {
         font-family: $font-open;
         font-weight: $regular;
-        font-size: 14px;
+        font-size: $small;
         text-transform: uppercase;
         position: absolute;
         margin-top: -4px;
