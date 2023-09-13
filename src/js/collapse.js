@@ -24,7 +24,7 @@ function openDiv(div) {
 
 // Evento para manejar el clic en las leyendas
 function handleClickLegend(event) {
-  if (event.target.classList.contains('form__title')) {
+  if (event.target.classList.contains('form__title') || event.target.classList.contains('form__icon')) {
     if (designForm.contains(event.target)) {
       openDiv(designForm);
     } else if (fillForm.contains(event.target)) {
