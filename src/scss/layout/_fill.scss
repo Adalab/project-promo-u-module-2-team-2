@@ -1,4 +1,9 @@
 .form {
+  /*background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+  linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+  linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+  background-size: 25px 25px;*/
+  
 
   &__fieldset {
     border: 0;
@@ -38,7 +43,6 @@
     font-family: $font-open;
     font-size: $small;
     margin-bottom: 1rem;
-    
   }
 
   &__input {
@@ -50,14 +54,13 @@
     font-size: $small;
     border: solid 1px $color-hospital-green;
 
-  &::placeholder {
+    &::placeholder {
       color: #c5c5c5;
     }
     &:focus {
       background-color: $color-white-four;
     }
   }
-
 }
 
 .form__image {
@@ -76,7 +79,6 @@
     border: none;
     box-shadow: $box-shadow;
     border-radius: 5px;
-
   }
 
   .square {
@@ -86,5 +88,3 @@
     margin-left: auto;
   }
 }
-
-
