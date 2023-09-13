@@ -9,7 +9,6 @@
   justify-content: center;
   font-size: $medium;
   padding-bottom: 2.5rem;
-
   padding-top: 1.5rem;
 }
 .footer__img {
@@ -18,7 +17,6 @@
   margin-left: 16rem;
 }
 @media all and (min-width: 768px) {
-   
   .footer__p {
     justify-content: flex-start;
     margin-left: 5rem;
@@ -26,6 +24,11 @@
   }
   .footer__img {
     margin-left: 61rem;
-    margin-top: -50px;
+    margin-top: -5rem;
+  }
+  @media all and (min-width: 1000px){
+    .footer__img {
+      margin-left: 80rem;
+    }
   }
 }
