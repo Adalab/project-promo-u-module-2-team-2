@@ -1,91 +1,84 @@
 .colors {
-    padding: 22px 0;
+  padding: 22px 0;
 
-    &__title {
-        font-family: $font-open;
-        font-weight: $regular;
-        font-size: $small;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: -4px;
-        margin-left: 19px;
-    }
+  &__title {
+    font-family: $font-open;
+    font-weight: $regular;
+    font-size: $small;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 19px;
+  }
 
-    &__container {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px;
-        padding-bottom: 20px;
-    }
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
 
-    &__palette {
-        display: flex;
-    }
-
+  &__palette {
+    display: flex;
+  }
 }
 
 .divColors {
-    width: 30px;
-    height: 25px;
+  width: 30px;
+  height: 25px;
 }
 
 .bluePalette:nth-of-type(1) {
-    background-color: $color-dark-green-blue; /* #114e4e */
+  background-color: $color-dark-green-blue; /* #114e4e */
 }
 .bluePalette:nth-of-type(2) {
-    background-color: $color-dirty-blue; /* #438792 */
+  background-color: $color-dirty-blue; /* #438792 */
 }
 .bluePalette:nth-of-type(3) {
-    background-color: $color-hospital-green; /* #a2deaf */
+  background-color: $color-hospital-green; /* #a2deaf */
 }
 .orangePalette:nth-of-type(1) {
-    background-color: $color-dried-blood; /* #420101 */
+  background-color: $color-dried-blood; /* #420101 */
 }
 .orangePalette:nth-of-type(2) {
-    background-color: $color-rusty-red; /* #bd1010 */
+  background-color: $color-rusty-red; /* #bd1010 */
 }
 .orangePalette:nth-of-type(3) {
-    background-color: $color-orange; /* #e17334 */
+  background-color: $color-orange; /* #e17334 */
 }
 .neutralPalette:nth-of-type(1) {
-    background-color: $color-slate; /* #3e5b65 */
+  background-color: $color-slate; /* #3e5b65 */
 }
 .neutralPalette:nth-of-type(2) {
-    background-color: $color-faded-orange; /* #eab052 */;
+  background-color: $color-faded-orange; /* #eab052 */
 }
 .neutralPalette:nth-of-type(3) {
-    background-color: $color-light-grey-blue; /* #a0c0cf */;
+  background-color: $color-light-grey-blue; /* #a0c0cf */
 }
-
-.aquaPalette:nth-of-type(1){
-    background-color: $color-forest-green; /* #228B22 */
+.forestPalette:nth-of-type(1) {
+  background-color: $color-forest-green; /* #228B22 */
 }
-.aquaPalette:nth-of-type(2){
-    background-color: $color-dark-grey; /* #A9A9A9 */
+.forestPalette:nth-of-type(2) {
+  background-color: $color-dark-grey; /* #A9A9A9 */
 }
-.aquaPalette:nth-of-type(3){
-    background-color: $color-deep-pink; /* #FF1493 */ 
+.forestPalette:nth-of-type(3) {
+  background-color: $color-deep-pink; /* #FF1493 */
 }
-
-
-
-.indianPalette:nth-of-type(1){
-    background-color: $color-medium-violet-red; /* #C71585 */
+.mediumPalette:nth-of-type(1) {
+  background-color: $color-medium-violet-red; /* #C71585 */
 }
-.indianPalette:nth-of-type(2){
-    background-color: $color-violet; /* #EE82EE */
+.mediumPalette:nth-of-type(2) {
+  background-color: $color-violet; /* #EE82EE */
 }
-.indianPalette:nth-of-type(3){
-    background-color: $color-misty-rose; /* #FFE4E1 */
+.mediumPalette:nth-of-type(3) {
+  background-color: $color-misty-rose; /* #FFE4E1 */
 }
-
-.saddlePalette:nth-of-type(1){
-    background-color: $color-maroon; /* #800000 */
+.maroonPalette:nth-of-type(1) {
+  background-color: $color-maroon; /* #800000 */
 }
-.saddlePalette:nth-of-type(2){
-    background-color: $color-saddle-brown; /* #8B4513 */
+.maroonPalette:nth-of-type(2) {
+  background-color: $color-saddle-brown; /* #8B4513 */
 }
-.saddlePalette:nth-of-type(3){
-    background-color: $color-coral; /* #FF7F50 */
+.maroonPalette:nth-of-type(3) {
+  background-color: $color-coral; /* #FF7F50 */
 }
-
