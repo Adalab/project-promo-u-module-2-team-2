@@ -1,6 +1,3 @@
-
-
-    
     
     /*cuerpo*/
     .card {
@@ -48,6 +45,7 @@
         padding-right: 2rem;
         padding-top: 1.5rem;
         padding-bottom: 0.5rem;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.32);
         
     }
     
@@ -57,25 +55,30 @@
         font-size: 1.8rem;
         border-left: solid $color-dirty-blue 0.3rem;
         padding-left: 1rem;
+        font-weight: $bold;
     }
     
     .card__paragragh--desc {
         color: $color-gunmetal;
+        font-family: $font-montse;
         font-size: 1.6rem;
         border-left: solid $color-dirty-blue 0.3rem;
         padding-left: 1rem;
+        
     }
     
     /*image*/
     
     .card__image {
-      width: 17rem;
+      width: 24rem;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.32);
      
     }
     
     /*icons*/
     
     .card__icons {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.32);
         width: 24rem;
         background-color: $color-white-four;
         list-style: none;
@@ -87,13 +90,15 @@
     }
     
     .card__icons--icon {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 25px;
+        height: 25px;
         color: $color-dark-green-blue;
         padding: 0.3rem;
         border: solid $color-hospital-green;
         border-radius: 50%;
         margin: 0.5rem;
+        font-size: $large;
+        
     }
     
     
