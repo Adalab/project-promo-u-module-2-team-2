@@ -1,30 +1,10 @@
 
-:root {
-    --font-merri: 'Merriweather', serif;
-    --font-montse: 'Montserrat', sans-serif;
-    --font-open: 'Open Sans', sans-serif;
-    --bold: 800;
-    --semiBold: 600;
-    --regular: 400;
-    
-    
-    /* colors*/
-    --color-black: #000000;
-    --color-dark-green-blue: #114e4e;
-    --color-dirty-blue: #438792;
-    --color-hospital-green: #a2deaf;
-    --color-light-khaki: #f9f4dc;
-    --color-white-two: #ffffff;
-    --color-orange: #e17334;
-    --color-gunmetal: #54585a;
-    --color-silver: #bfcdd0;
-    }
-    
+
     
     
     /*cuerpo*/
     .card {
-        background-color: var(--color-silver);
+        background-color: $color-silver;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,7 +14,7 @@
     /*button*/
     
     .button__card {
-        background-color: var(--color-silver);
+        background-color: $color-silver;
         border: solid white 0.1rem;
         border-radius: 25px;
         width: 7.5rem;
@@ -48,12 +28,12 @@
     
     .button__card--link {
         text-decoration: none;
-        color: var(--color-gunmetal);
+        color: $color-gunmetal;
         text-transform: uppercase;
     }
     
     .button__card--icon {
-            color: var(--color-gunmetal);
+            color: $color-gunmetal;
             margin-right: 1rem;
         
     }
@@ -63,8 +43,8 @@
     
     
     .card__paragragh {
-        background-color: white;
-        width: 17rem;
+        width: 24rem;
+        background-color: $color-white-four;
         padding-right: 2rem;
         padding-top: 1.5rem;
         padding-bottom: 0.5rem;
@@ -73,16 +53,16 @@
     
     .card__paragragh--title {
         color: #114e4e;
-        font-family: var(--font-montse);
+        font-family: $font-montse;
         font-size: 1.8rem;
-        border-left: solid var(--color-dirty-blue) 0.3rem;
+        border-left: solid $color-dirty-blue 0.3rem;
         padding-left: 1rem;
     }
     
     .card__paragragh--desc {
-        color: var(--color-gunmetal);
+        color: $color-gunmetal;
         font-size: 1.6rem;
-        border-left: solid var(--color-dirty-blue) 0.3rem;
+        border-left: solid $color-dirty-blue 0.3rem;
         padding-left: 1rem;
     }
     
@@ -96,8 +76,8 @@
     /*icons*/
     
     .card__icons {
-        width: 17rem;
-        background-color: white;
+        width: 24rem;
+        background-color: $color-white-four;
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -107,11 +87,11 @@
     }
     
     .card__icons--icon {
-        width: 1.2rem;
-        height: 1.2rem;
-        color: var(--color-dark-green-blue);
+        width: 2.5rem;
+        height: 2.5rem;
+        color: $color-dark-green-blue;
         padding: 0.3rem;
-        border: solid var(--color-hospital-green);
+        border: solid $color-hospital-green;
         border-radius: 50%;
         margin: 0.5rem;
     }
