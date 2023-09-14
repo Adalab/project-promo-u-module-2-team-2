@@ -1,33 +1,5 @@
 .form {
 
-  &__fieldset {
-    border: 0;
-    border-bottom: 1px solid lightgrey;
-  }
-
-  &__title {
-    color: $color-gunmetal;
-    text-transform: uppercase;
-    font-family: $font-open;
-    font-weight: $semiBold;
-    font-size: $large;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  &__icon {
-    color: $color-orange;
-    font-size: 20px;
-  }
-
-  &__arrow {
-    color: $color-gunmetal;
-    margin-left: auto;
-  }
-
   &__fill {
     margin-top: 1rem;
   }
@@ -38,7 +10,6 @@
     font-family: $font-open;
     font-size: $small;
     margin-bottom: 1rem;
-    
   }
 
   &__input {
@@ -57,7 +28,6 @@
       background-color: $color-white-four;
     }
   }
-
 }
 
 .form__image {
