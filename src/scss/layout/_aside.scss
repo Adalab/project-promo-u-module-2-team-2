@@ -21,6 +21,7 @@
         height: 3rem;
         margin-bottom: 1.5rem;
         margin-top: 3.8rem;
+        margin-left: -165px;     // <---- BOTÓN DESPLAZADO A LA IZDA. 
         align-items: baseline;
        
     }
@@ -38,7 +39,12 @@
         
     }
     
-    
+        /* ANCHO Y SOMBRA */
+    .card__paragragh, .card__image, .card__icons {  
+        max-width: 240px;
+        box-shadow: $box-shadow;
+    }
+
     /*name*/
     
     
@@ -69,8 +75,7 @@
     /*image*/
     
     .card__image {
-      width: 17rem;
-     
+      /* width: 17rem; */      // <---- NO HACE FALTA 
     }
     
     /*icons*/
@@ -89,6 +94,7 @@
     .card__icons--icon {
         width: 2.5rem;
         height: 2.5rem;
+        font-size: $large;
         color: $color-dark-green-blue;
         padding: 0.3rem;
         border: solid $color-hospital-green;
