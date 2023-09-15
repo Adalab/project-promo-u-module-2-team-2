@@ -1,61 +1,58 @@
 'use strict';
+// Variables
+const nameInput = document.querySelector('.js_name_input');
+const emailInput = document.querySelector('.js_email_input');
+const jobInput = document.querySelector('.js_job_input');
 
-//hacer imagen
-//poner variables nombre completo, puesto, email, teléfono, linkedin, github
-//un evento que recoge todos los input
+const namePreviewTitle = document.querySelector('.js_name_preview');
+const emailPreviewLink = document.querySelector('.js_email_preview');
+const jobPreviewTitle = document.querySelector('.js_job_preview');
 
-//si rellenas nombre (currentTarget) contenido != vacío tiene que aparecer en la tarjeta
+// LOS PARÁMETROS DEL OBJETOS TIENEN LOS MISMOS NOMBRES QUE EN EL ANEXO!!
+const data = {
+  palette: 1, // el que viene por defecto
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+};
 
-//innerHTML no sabemos muy bien para qué
+// Funciones
 
-const nombreCompleto = document.querySelector('.js-nombre_completo');
-const nombreValue = document.querySelector('.nombre_value');
-const puesto = document.querySelector('.js-puesto');
-const puestoValue = document.querySelector('.puesto_value');
-const email = document.querySelector('.js-email');
-const emailValue = document.querySelector('.email_value');
-//const phone = document.querySelector('.js-phone');
-//const phoneValue = document.querySelector('.phone_value');
-const linkedin = document.querySelector('.js-linkedin');
-const linkedinValue = document.querySelector('.linkedin_value');
-const github = document.querySelector('.js-github');
-const githubValue = document.querySelector('.github_value');
+function updatePreview() {
+  emailPreviewLink.href = `mailto:${data.email}`;
+  jobPreviewTitle.innerHTML = data.job;
+  namePreviewTitle.innerHTML = data.name;
+}
 
-function updateValueNombre(event) {
-  nombreValue.textContent = event.target.value;
-
-  if (event.target.value === '') {
-    nombreValue.textContent = 'Nombre Apellido';
+// Funciones eventos
+function handleInputName(event) {
+  event.preventDefault();
+  data.name = nameInput.value;
+  if (nameInput.value === '') {
+    namePreviewTitle.innerHTML = 'Nombre Apellido';
   }
+  updatePreview();
 }
 
-function updateValuePuesto(event) {
-  puestoValue.textContent = event.target.value;
+function handleInputEmail() {
+  data.email = emailInput.value;
+  updatePreview();
+}
 
-  if (event.target.value === '') {
-    puestoValue.textContent = 'Front Developer';
+function handleInputJob(event) {
+  event.preventDefault();
+  data.job = jobInput.value;
+  if (jobInput.value === '') {
+    jobPreviewTitle.innerHTML = 'Front-end Developer';
   }
+  updatePreview();
 }
 
-function updateValueEmail(event) {
-  emailValue.href = event.target.value;
-}
-
-/*function updateValuePhone(event) {
-  phoneValue.href = event.target.value;
-}*/
-
-function updateValueLinkedin(event) {
-  linkedinValue.href = event.target.value;
-}
-
-function updateValueGithub(event) {
-  githubValue.href = event.target.value;
-}
-//evento
-nombreCompleto.addEventListener('input', updateValueNombre);
-puesto.addEventListener('input', updateValuePuesto);
-email.addEventListener('input', updateValueEmail);
-//phone.addEventListener('input', updateValuePhone);
-linkedin.addEventListener('input', updateValueLinkedin);
-github.addEventListener('input', updateValueGithub);
+//Eventos
+nameInput.addEventListener('input', handleInputName);
+emailInput.addEventListener('input', handleInputEmail);
+jobInput.addEventListener('input', handleInputJob);
