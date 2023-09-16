@@ -43,7 +43,7 @@
 
     <div class="form__image">
       <label class="" for="image-selector"></label>
-      <input class="btnPic" type="button" value="Añadir imagen" />
+      <input class="btnPic" id="image-selector" type="button" value="Añadir imagen" />
       <div class="square"></div>
     </div>
 
@@ -55,18 +55,17 @@
         id="email"
         type="email"
         name="email"
-        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-        ;
         placeholder="Ej: sally-hill@gmail.com"
         required
       />
+      <!-- NO FUNCIONA :'(  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"  -->
     </label>
 
     <!--Teléfono-->
     <label class="form__label" for="telephone">
       Teléfono
       <input
-        class="form__input"
+        class="form__input js_phone_input"
         id="telephone"
         type="tel"
         name="telephone"
@@ -80,12 +79,12 @@
     <label class="form__label" for="linkedin">
       Linkedin
       <input
-        class="form__input js-linkedin"
+        class="form__input js_linkedin_input"
         id="linkedin"
-        type="url"
+        type="text"
         name="linkedin"
         pattern=""
-        placeholder="Ej: www.linkedin.com/in/sally.hill"
+        placeholder="Ej: sally-hill"
         required
       />
     </label>
@@ -94,12 +93,12 @@
     <label class="form__label" for="github">
       Github
       <input
-        class="form__input js-github"
+        class="form__input js_github_input"
         id="github"
-        type="url"
+        type="text"
         name="github"
         pattern=""
-        placeholder="Ej: www.github.com/sally-hill"
+        placeholder="Ej: sally-hill"
         required
       />
     </label>
