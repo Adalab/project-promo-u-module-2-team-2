@@ -19,7 +19,8 @@ body {
     padding: 40px;
 
     @media (min-width: 768px) {
-        gap: 180px;
+        gap: 75px;
+        justify-content: flex-end;
     }
 
     &__img {

@@ -5,8 +5,93 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+    /*Clases modificadoras para el evento click en JS*/
+        &--palette1 {
+            .card__paragragh--title  {
+                color: $color-dark-green-blue;
+                border-left: solid $color-dirty-blue 0.3rem;
+            }
+            .card__paragragh--desc {
+                border-left: solid $color-dirty-blue 0.3rem;
+            }
+            .card__icons--icon {
+                color: $color-dark-green-blue;
+                border: solid $color-hospital-green;
+            }
+        }
+
+        &--palette2 {
+            .card__paragragh--title  {
+                color: $color-dried-blood;
+                border-left: solid $color-rusty-red 0.3rem;
+            }
+            .card__paragragh--desc {
+                border-left: solid $color-rusty-red 0.3rem;
+            }
+            .card__icons--icon {
+                color: $color-dried-blood;
+                border: solid $color-orange;
+            }
+        }
+
+        &--palette3 {
+            .card__paragragh--title  {
+                color: $color-slate;
+                border-left: solid $color-faded-orange 0.3rem;
+            }
+            .card__paragragh--desc {
+                border-left: solid $color-faded-orange 0.3rem;
+            }
+            .card__icons--icon {
+                color: $color-slate;
+                border: solid $color-light-grey-blue;
+            }
+        }
+
+        &--palette4 {
+            .card__paragragh--title  {
+                color: $color-forest-green;
+                border-left: solid $color-dark-grey 0.3rem;
+            }
+            .card__paragragh--desc {
+                border-left: solid $color-dark-grey 0.3rem;
+            }
+            .card__icons--icon {
+                color: $color-forest-green;
+                border: solid $color-deep-pink;
+            }
+        }
+
+            &--palette5 {
+                .card__paragragh--title  {
+                    color: $color-medium-violet-red;
+                    border-left: solid $color-violet 0.3rem;
+                }
+                .card__paragragh--desc {
+                    border-left: solid $color-violet 0.3rem;
+                }
+                .card__icons--icon {
+                    color: $color-medium-violet-red;
+                    border: solid $color-misty-rose;
+                }
+            }
+
+            &--palette6 {
+                .card__paragragh--title  {
+                    color: $color-maroon;
+                    border-left: solid $color-saddle-brown 0.3rem;
+                }
+                .card__paragragh--desc {
+                    border-left: solid $color-saddle-brown 0.3rem;
+                }
+                .card__icons--icon {
+                    color: $color-maroon;
+                    border: solid $color-coral;
+                }
+            }
+
     }
-    
     
     /*button*/
     
@@ -56,7 +141,7 @@
     }
     
     .card__paragragh--title {
-        color: #114e4e;
+        color: $color-dark-green-blue;
         font-family: $font-montse;
         font-size: 1.8rem;
         border-left: solid $color-dirty-blue 0.3rem;
@@ -70,7 +155,6 @@
         font-size: 1.6rem;
         border-left: solid $color-dirty-blue 0.3rem;
         padding-left: 1rem;
-        
     }
     
     /*image*/
@@ -102,7 +186,6 @@
         border: solid $color-hospital-green;
         border-radius: 50%;
         margin: 0.5rem;
-        font-size: $large;
         
     }
     
