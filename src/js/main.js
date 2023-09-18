@@ -1,1 +1,0 @@
-// el código sobre la previsualización de la tarjeta se ha pasado a input_cards.js

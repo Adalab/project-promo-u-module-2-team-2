@@ -23,6 +23,20 @@
 
         &--palette2 {
             .card__paragragh--title  {
+                color: $color-medium-violet-red;
+                border-left: solid $color-violet 0.3rem;
+            }
+            .card__paragragh--desc {
+                border-left: solid $color-violet 0.3rem;
+            }
+            .card__icons--icon {
+                color: $color-medium-violet-red;
+                border: solid $color-misty-rose;
+            }
+        }
+
+        &--palette3 {
+            .card__paragragh--title  {
                 color: $color-dried-blood;
                 border-left: solid $color-rusty-red 0.3rem;
             }
@@ -35,7 +49,7 @@
             }
         }
 
-        &--palette3 {
+        &--palette4 {
             .card__paragragh--title  {
                 color: $color-slate;
                 border-left: solid $color-faded-orange 0.3rem;
@@ -49,31 +63,17 @@
             }
         }
 
-        &--palette4 {
-            .card__paragragh--title  {
-                color: $color-forest-green;
-                border-left: solid $color-dark-grey 0.3rem;
-            }
-            .card__paragragh--desc {
-                border-left: solid $color-dark-grey 0.3rem;
-            }
-            .card__icons--icon {
-                color: $color-forest-green;
-                border: solid $color-deep-pink;
-            }
-        }
-
             &--palette5 {
                 .card__paragragh--title  {
-                    color: $color-medium-violet-red;
-                    border-left: solid $color-violet 0.3rem;
+                    color: $color-forest-green;
+                    border-left: solid $color-dark-grey 0.3rem;
                 }
                 .card__paragragh--desc {
-                    border-left: solid $color-violet 0.3rem;
+                    border-left: solid $color-dark-grey 0.3rem;
                 }
                 .card__icons--icon {
-                    color: $color-medium-violet-red;
-                    border: solid $color-misty-rose;
+                    color: $color-forest-green;
+                    border: solid $color-deep-pink;
                 }
             }
 
@@ -96,7 +96,7 @@
     /*button*/
     
     .button__card {
-        background-color: $color-silver;
+        background-color: $color-dark-blue;
         border: solid white 0.1rem;
         border-radius: 25px;
         width: 7.5rem;
@@ -105,18 +105,22 @@
         margin-top: 3.8rem;
         margin-left: -165px;     // <---- BOTÓN DESPLAZADO A LA IZDA. 
         align-items: baseline;
+        font-size: 1.3rem;
+        &:hover {
+            background-color: $color-dirty-blue;
+        }
        
     }
     
     
     .button__card--link {
         text-decoration: none;
-        color: $color-gunmetal;
+        color: $color-white-two;
         text-transform: uppercase;
     }
     
     .button__card--icon {
-            color: $color-gunmetal;
+            color: $color-white-two;
             margin-right: 1rem;
         
     }
@@ -160,7 +164,7 @@
     /*image*/
     
     .card__image {
-      /* width: 17rem; */      // <---- NO HACE FALTA 
+        display: block;
     }
     
     /*icons*/
@@ -180,7 +184,7 @@
     .card__icons--icon {
         width: 2.5rem;
         height: 2.5rem;
-        font-size: $large;
+        font-size: $medium;
         color: $color-dark-green-blue;
         padding: 0.3rem;
         border: solid $color-hospital-green;
