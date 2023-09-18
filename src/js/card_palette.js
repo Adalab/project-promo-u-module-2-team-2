@@ -4,8 +4,8 @@ const colorPaletteOne = document.querySelector('.color_palette_1');
 const colorPaletteTwo = document.querySelector('.color_palette_2');
 const colorPaletteThree = document.querySelector('.color_palette_3');
 const colorPaletteFour = document.querySelector('.color_palette_4');
-const colorPaletteFive = document.querySelector('.color_palette_5');
-const colorPaletteSix = document.querySelector('.color_palette_6');
+/* const colorPaletteFive = document.querySelector('.color_palette_5');
+const colorPaletteSix = document.querySelector('.color_palette_6'); */
 const card = document.querySelector('.js_card');
 
 // Funciones
