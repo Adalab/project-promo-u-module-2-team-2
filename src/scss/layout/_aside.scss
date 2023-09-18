@@ -114,12 +114,14 @@
     
     
     .button__card--link {
+        font-size: 11px;
         text-decoration: none;
         color: $color-white-two;
         text-transform: uppercase;
     }
     
     .button__card--icon {
+            font-size: 11px;
             color: $color-white-two;
             margin-right: 1rem;
         
@@ -148,7 +150,7 @@
         color: $color-dark-green-blue;
         font-family: $font-montse;
         font-size: 1.8rem;
-        border-left: solid $color-dirty-blue 0.3rem;
+        border-left: solid $color-dirty-blue 0.4rem;
         padding-left: 1rem;
         font-weight: $bold;
     }
@@ -157,7 +159,7 @@
         color: $color-gunmetal;
         font-family: $font-montse;
         font-size: 1.6rem;
-        border-left: solid $color-dirty-blue 0.3rem;
+        border-left: solid $color-dirty-blue 0.4rem;
         padding-left: 1rem;
     }
     
@@ -178,19 +180,29 @@
         flex-direction: row;
         padding: 0.5rem;
         margin-bottom: 3rem;
-        padding-right: 3.5rem;
+        padding-left: 1.75rem;
     }
     
     .card__icons--icon {
-        width: 2.5rem;
-        height: 2.5rem;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
         font-size: $medium;
-        color: $color-dark-green-blue;
-        padding: 0.3rem;
-        border: solid $color-hospital-green;
+        align-items: center;
+        border: solid $color-hospital-green 0.275rem;
         border-radius: 50%;
-        margin: 0.5rem;
+        padding-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.75rem;
+        padding-left: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+             
         
+    }
+
+    .card__icon-link {
+        text-decoration: none;
     }
     
     
