@@ -61,7 +61,7 @@ function handleColorFour() {
   }
 }
 
-function handleColorFive() {
+/* function handleColorFive() {
   card.classList.remove('card--palette1');
   card.classList.remove('card--palette2');
   card.classList.remove('card--palette3');
@@ -77,12 +77,12 @@ function handleColorSix() {
   card.classList.remove('card--palette5');
   card.classList.remove('card--palette1');
   card.classList.add('card--palette6');
-}
+} */
 
 //Eventos
 colorPaletteOne.addEventListener('click', handleColorOne);
 colorPaletteTwo.addEventListener('click', handleColorTwo);
 colorPaletteThree.addEventListener('click', handleColorThree);
 colorPaletteFour.addEventListener('click', handleColorFour);
-colorPaletteFive.addEventListener('click', handleColorFive);
-colorPaletteSix.addEventListener('click', handleColorSix);
+/* colorPaletteFive.addEventListener('click', handleColorFive);
+colorPaletteSix.addEventListener('click', handleColorSix); */
