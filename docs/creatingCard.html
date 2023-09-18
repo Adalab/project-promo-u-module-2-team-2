@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Promo u module2 Team2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c67de0d99.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Para que se puedan ver los iconos -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+          <a href="index.html">
+            <img src="./assets/images/title-small.png" alt="logo-header" class="header__img"/>
+          </a>
+      </div>
+    </header>
+
+
+    <main class="main">
+      
+            <section class="card js_card"> <!-- card--palette aparece aquí -->
+              
+              <button class="button__card">
+                <a class="button__card--link" href="creatingCard.html"><i class="button__card--icon fa-regular fa-trash-can"></i>reset
+              </a></button>
+            
+
+            
+             <div class="card__paragragh">
+                <p class="card__paragragh--title js_name_preview">Nombre Apellido</p>
+                <p class="card__paragragh--desc js_job_preview">Front-end developer</p>
+              </div>
+
+                <img class="card__image"
+                  src="./assets/images/cardExample_palette1.jpg" 
+                  alt="fotografía para mostrar en tu tarjeta personalizada"
+                />
+                <!-- src="https://via.placeholder.com/510x500" -->
+                <!-- ANTIGÜO: "https://via.placeholder.com/255x250" -->
+            
+
+              <div class="card__icon">
+                
+                <ul class="card__icons">
+                  <li>
+                    <a class="card__icon-link" href="#" class="js_phone_preview">
+                      <i class="card__icons--icon fa-solid fa-mobile-screen-button"></i></a>
+                  </li>
+                  <li>
+                    <a class="card__icon-link" href="#" class="js_email_preview"
+                      ><i class="card__icons--icon fa-regular fa-envelope"></i></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="card__icon-link" href="#" class="js_linkedin_preview"
+                      ><i class="card__icons--icon fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="card__icon-link" href="#" class="js_github_preview"
+                      ><i class="card__icons--icon fa-brands fa-github-alt"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              
+            </section>
+      <section class="sectionForm">
+        <form action="" class="form js-currentTarget">
+          <fieldset class="form__fieldset js_design_form">
+            <!-- variable designForm -->
+            <legend class="form__title">
+              <!-- js_design_legend -->
+              <span class="form__icon fa-regular fa-object-ungroup"></span>
+              diseña
+              <span class="form__icon form__arrow fa-solid fa-chevron-up"></span>
+            </legend>
+            <div class="colors form__design">
+              <!-- form__design -> display: none -->
+              <label class="colors__title">colores</label>
+              <div class="colors__container">
+                <input type="radio" id="blue" name="palette"
+                 class="color_palette_1" value="1" checked />
+                <label for="blue" class="colors__palette">
+                  <div class="divColors bluePalette"></div>
+                  <div class="divColors bluePalette"></div>
+                  <div class="divColors bluePalette"></div>
+                </label>
+              </div>
+              <div class="colors__container">
+                <input type="radio" id="medium" name="palette"
+                 class="color_palette_2" value="2" />
+                <label for="medium" class="colors__palette">
+                  <div class="divColors mediumPalette"></div>
+                  <div class="divColors mediumPalette"></div>
+                  <div class="divColors mediumPalette"></div>
+                </label>
+              </div>
+              <div class="colors__container">
+                <input type="radio" id="orange" name="palette"
+                class="color_palette_3" value="3" />
+                <label for="orange" class="colors__palette">
+                  <div class="divColors orangePalette"></div>
+                  <div class="divColors orangePalette"></div>
+                  <div class="divColors orangePalette"></div>
+                </label>
+              </div>
+              <div class="colors__container">
+                <input type="radio" id="neutral" name="palette"
+                class="color_palette_4" value="4" />
+                <label for="neutral" class="colors__palette">
+                  <div class="divColors neutralPalette"></div>
+                  <div class="divColors neutralPalette"></div>
+                  <div class="divColors neutralPalette"></div>
+                </label>
+              </div>
+          <!--     <div class="colors__container">
+                <input type="radio" id="forest" name="palette" 
+                class="color_palette_5" value="5" />
+                <label for="forest" class="colors__palette">
+                  <div class="divColors forestPalette"></div>
+                  <div class="divColors forestPalette"></div>
+                  <div class="divColors forestPalette"></div>
+                </label>
+              </div>
+              <div class="colors__container">
+                <input type="radio" id="maroon" name="palette"
+                 class="color_palette_6" value="6" />
+                <label for="maroon" class="colors__palette">
+                  <div class="divColors maroonPalette"></div>
+                  <div class="divColors maroonPalette"></div>
+                  <div class="divColors maroonPalette"></div>
+                </label>
+              </div> -->
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset js_fill_form collapsed">
+            <!-- variable fillForm -->
+            <legend class="form__title">
+              <!--  js_fill_legend -->
+              <span class="form__icon fa-regular fa-keyboard"></span>
+              rellena
+              <span
+                class="form__icon form__arrow collap-icon fa-solid fa-chevron-up"
+              ></span>
+            </legend>
+
+            <!--Nombre-->
+            <section class="form__fill">
+              <!-- form__fill -> display: none -->
+              <label class="form__label" for="name">
+                Nombre completo
+                <input
+                  class="form__input js_name_input"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Ej: Sally Jill"
+                  required
+                />
+              </label>
+
+              <!--Puesto-->
+              <label class="form__label" for="position">
+                Puesto
+                <input
+                  class="form__input js_job_input"
+                  id="position"
+                  type="text"
+                  name="position"
+                  placeholder="Ej: Front-end unicorn"
+                  required
+                />
+              </label>
+
+              <!--Imagen de perfil-->
+
+              <label class="form__label" for="position">Imagen de perfil</label>
+
+              <div class="form__image">
+                <label class="" for="image-selector"></label>
+                <input class="btnPic" id="image-selector" type="button" value="Añadir imagen" />
+                <div class="square"></div>
+              </div>
+
+              <!--Email-->
+              <label class="form__label" for="email">
+                Email
+                <input
+                  class="form__input js_email_input"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Ej: sally-hill@gmail.com"
+                  required
+                />
+                <!-- NO FUNCIONA :'(  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"  -->
+              </label>
+
+              <!--Teléfono-->
+              <label class="form__label" for="telephone">
+                Teléfono
+                <input
+                  class="form__input js_phone_input"
+                  id="telephone"
+                  type="tel"
+                  name="telephone"
+                  pattern="^(\(?(\+34|0034)\)?)?(6|7|8|9)(\d{8})$"
+                  placeholder="Ej: 555-55-55-55"
+                  required
+                />
+              </label>
+
+              <!--Linkedin-->
+              <label class="form__label" for="linkedin">
+                Linkedin
+                <input
+                  class="form__input js_linkedin_input"
+                  id="linkedin"
+                  type="text"
+                  name="linkedin"
+                  pattern=""
+                  placeholder="Ej: sally-hill"
+                  required
+                />
+              </label>
+
+              <!--Github-->
+              <label class="form__label" for="github">
+                Github
+                <input
+                  class="form__input js_github_input"
+                  id="github"
+                  type="text"
+                  name="github"
+                  pattern=""
+                  placeholder="Ej: sally-hill"
+                  required
+                />
+              </label>
+            </section>
+          </fieldset>
+
+          <fieldset class="form__fieldset js_share_form collapsed">
+            <!-- variable shareForm -->
+            <legend class="form__title">
+              <!-- js_share_legend -->
+              <span class="form__icon fa-solid fa-share-nodes"></span>
+              comparte
+              <span class="form__icon form__arrow fa-solid fa-chevron-up"></span>
+            </legend>
+            <div class="form__share js-currentTargetCreated">
+              <!-- form__share -> display: none -->
+              <button class="btnCreated js-btnCreated">
+                <span class="btnCreated__icon fa-regular fa-address-card"></span>
+                crear tarjeta
+              </button>
+              <span class="hr"></span>
+              <article class="cardCreated js-hidden">
+                <div class="">
+                  <h2 class="cardCreated__title">La tarjeta ha sido creada:</h2>
+                  <a
+                    class="cardCreated__link"
+                    href="https://awesome-profile-card.com?id=A456DF0001"
+                  >
+                    https://awesome-profile-card.com?id=A456DF0001
+                  </a>
+                </div>
+                <div class="cardCreated__btn">
+                  <span class="cardCreated__btn__icon fa-brands fa-x-twitter"></span>
+                  Compartir en twitter
+                </div>
+              </article>
+            </div>
+          </fieldset>
+
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+          <p class="footer__p">Awesome profile-cards @2023</p>
+          <img src="./assets/images/logo-adalab.png"alt="logo-adalab" class="footer__img" />
+      </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
