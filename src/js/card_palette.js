@@ -18,7 +18,7 @@ function handleColorOne() {
   card.classList.add('card--palette1');
   if (card.classList.contains('card--palette1')) {
     const img = document.querySelector('.card__image'); // ?
-    img.src = './images/cardExample_palette1.jpg';
+    img.src = './assets/images/cardExample_palette1.jpg';
   }
 }
 
@@ -31,7 +31,7 @@ function handleColorTwo() {
   card.classList.add('card--palette2');
   if (card.classList.contains('card--palette2')) {
     const img = document.querySelector('.card__image'); // ?
-    img.src = './images/cardExample_palette1.jpg';
+    img.src = './assets/images/cardExample_palette1.jpg';
   }
 }
 
@@ -44,7 +44,7 @@ function handleColorThree() {
   card.classList.add('card--palette3');
   if (card.classList.contains('card--palette3')) {
     const img = document.querySelector('.card__image'); // ?
-    img.src = './assets/images/cardExample_palette3.jpg';
+    img.src = './assets/images/cardExample_palette2.jpg';
   }
 }
 
