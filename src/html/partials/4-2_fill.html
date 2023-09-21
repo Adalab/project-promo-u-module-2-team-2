@@ -42,9 +42,22 @@
     <label class="form__label" for="position">Imagen de perfil</label>
 
     <div class="form__image">
-      <label class="" for="image-selector"></label>
-      <input class="btnPic" id="image-selector" type="button" value="Añadir imagen" />
-      <div class="square"></div>
+      <label class="action__upload-btn" for="img-selector"></label>
+      <input
+        class="btnPic js__profile-upload-btn action__hiddenField"
+        id="img-selector"
+        type="file"
+        value="Añadir imagen"
+      />
+      <div class="square">
+        <div
+          class="profile__image js__profile-image"
+          style="
+            background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+          "
+        ></div>
+        <div class="profile__preview js__profile-preview"></div>
+      </div>
     </div>
 
     <!--Email-->
