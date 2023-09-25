@@ -43,10 +43,11 @@
                 <p class="card__paragragh--desc js_job_preview">Front-end developer</p>
               </div>
 
-                <img class="card__image"
+                <div class="js__profile-preview card__image1"></div>
+                <!-- <img class="card__image"
                   src="./assets/images/cardExample_palette1.jpg" 
                   alt="fotografía para mostrar en tu tarjeta personalizada"
-                />
+                /> -->
                 <!-- src="https://via.placeholder.com/510x500" -->
                 <!-- ANTIGÜO: "https://via.placeholder.com/255x250" -->
             
@@ -55,21 +56,21 @@
                 
                 <ul class="card__icons">
                   <li>
-                    <a class="card__icon-link js_phone_preview">
+                    <a class="card__icon-link js_phone_preview" target="_blank">
                       <i class="card__icons--icon fa-solid fa-mobile-screen-button"></i></a>
                   </li>
                   <li>
-                    <a class="card__icon-link js_email_preview"
+                    <a class="card__icon-link js_email_preview" target="_blank"
                       ><i class="card__icons--icon fa-regular fa-envelope"></i></i
                     ></a>
                   </li>
                   <li>
-                    <a class="card__icon-link js_linkedin_preview"
+                    <a class="card__icon-link js_linkedin_preview" target="_blank"
                       ><i class="card__icons--icon fa-brands fa-linkedin-in"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="card__icon-link js_github_preview"
+                    <a class="card__icon-link js_github_preview" target="_blank"
                       ><i class="card__icons--icon fa-brands fa-github-alt"></i
                     ></a>
                   </li>
@@ -191,9 +192,21 @@
               <label class="form__label" for="position">Imagen de perfil</label>
 
               <div class="form__image">
-                <label class="" for="image-selector"></label>
-                <input class="btnPic" id="image-selector" type="button" value="Añadir imagen" />
-                <div class="square"></div>
+                <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
+                <input
+                  class="btnPic js__profile-upload-btn action__hiddenField"
+                  id="img-selector"
+                  type="file"
+                  value="Añadir imagen"
+                />
+                <div class="square">
+                  <div
+                    class="profile__image js__profile-image"
+                    style="
+                      background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+                    "
+                  ></div>
+                </div>
               </div>
 
               <!--Email-->

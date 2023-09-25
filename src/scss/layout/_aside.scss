@@ -128,7 +128,7 @@
     }
     
         /* ANCHO Y SOMBRA */
-    .card__paragragh, .card__image, .card__icons {  
+    .card__paragragh, /* .card__image, */ .card__icons {  
         max-width: 240px;
         box-shadow: $box-shadow;
     }
@@ -165,8 +165,29 @@
     
     /*image*/
     
-    .card__image {
-        display: block;
+    .card__image1 {
+        background-image: url("../images/cardExample_palette1.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 24rem;
+        height: 25rem;
+        /* display: block; */
+    }
+
+    .card__image2 {
+        background-image: url("../images/cardExample_palette2.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 24rem;
+        height: 25rem;
+    }
+
+    .card__image3 {
+        background-image: url("../images/cardExample_palette3.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 24rem;
+        height: 25rem;
     }
     
     /*icons*/
