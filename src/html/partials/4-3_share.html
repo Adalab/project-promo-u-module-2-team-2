@@ -8,23 +8,26 @@
   </legend>
   <div class="form__share js-currentTargetCreated">
     <!-- form__share -> display: none -->
-    <button class="btnCreated js-btnCreated">
+    <button class="btnCreated js-btnCreated js_shareBtn">
       <span class="btnCreated__icon fa-regular fa-address-card"></span>
       crear tarjeta
     </button>
+    <p class="js_messageBox"></p>
     <span class="hr"></span>
-    <article class="cardCreated js-hidden">
+    <article class="cardCreated js-hidden js_shareBox">
       <div class="">
         <h2 class="cardCreated__title">La tarjeta ha sido creada:</h2>
         <a
-          class="cardCreated__link"
+          class="cardCreated__link js_cardLink"
           href="https://awesome-profile-card.com?id=A456DF0001"
         >
           https://awesome-profile-card.com?id=A456DF0001
         </a>
       </div>
       <div class="cardCreated__btn">
-        <span class="cardCreated__btn__icon fa-brands fa-x-twitter"></span>
+        <span
+          class="cardCreated__btn__icon fa-brands fa-x-twitter js_twitterLink"
+        ></span>
         Compartir en twitter
       </div>
     </article>
