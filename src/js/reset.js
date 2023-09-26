@@ -18,6 +18,9 @@ function handleReset(event) {
 
   namePreviewTitle.innerHTML = 'Nombre Apellido';
   jobPreviewTitle.innerHTML = 'Front-end unicorn';
+  profileImage.style.backgroundImage = 'url("")';
+  profilePreview.style.backgroundImage =
+    'url("./assets/images/cardExample_palette1.jpg")';
   emailPreviewLink.href = '';
   phonePreviewLink.href = '';
   linkedinPreviewLink.href = '';
@@ -26,6 +29,7 @@ function handleReset(event) {
   checkReset.checked = true;
   hiddenCreated.classList.add('js-hidden');
   btnCreated.classList.remove('grey');
+
   handleColorOne();
 }
 

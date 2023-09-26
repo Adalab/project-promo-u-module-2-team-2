@@ -98,4 +98,3 @@ colorPaletteThree.addEventListener('click', handleColorThree);
 colorPaletteFour.addEventListener('click', handleColorFour);
 /* colorPaletteFive.addEventListener('click', handleColorFive);
 colorPaletteSix.addEventListener('click', handleColorSix); */
-
