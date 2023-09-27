@@ -11,7 +11,7 @@ function handleClickCreated(event) {
   event.preventDefault();
   btnCreated.disabled = true;
   btnCreated.classList.add('grey');
-  hiddenCreated.classList.remove('js-hidden');
+  // hiddenCreated.classList.remove('js-hidden');
 }
 
 //eventos

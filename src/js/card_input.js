@@ -16,7 +16,7 @@ const githubPreviewLink = document.querySelector('.js_github_preview');
 
 
 // LOS PARÁMETROS DEL OBJETOS TIENEN LOS MISMOS NOMBRES QUE EN EL ANEXO!!
-const data = {
+let data = {
   palette: 1, // el que viene por defecto
   name: '',
   job: '',

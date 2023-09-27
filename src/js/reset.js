@@ -1,7 +1,7 @@
 'use strict';
 //variable
 const buttonReset = document.querySelector('.js_buttonReset');
-const checkReset = document.querySelector('.js_checkReset');
+const checkReset = document.querySelector('.js_checkReset'); // resetea la paleta
 // Variables
 //las coge de card_input.js
 
@@ -26,9 +26,26 @@ function handleReset(event) {
   linkedinPreviewLink.href = '';
   githubPreviewLink.href = '';
 
+  // los valores de data vacíos
+  data = {
+    palette: 1, // el que viene por defecto
+    name: '',
+    job: '',
+    phone: '',
+    email: '',
+    linkedin: '',
+    github: '',
+    photo: '',
+  };
+
   checkReset.checked = true;
+
+  btnCreated.disabled = false;
   hiddenCreated.classList.add('js-hidden');
+  shareBox.classList.add("js-hidden");
   btnCreated.classList.remove('grey');
+
+  messageBox.innerHTML ='';
 
   handleColorOne();
 }

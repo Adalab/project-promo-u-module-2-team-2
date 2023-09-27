@@ -9,6 +9,14 @@
 @import 'layout/header';
 @import 'layout/avatar';
 
+/* body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ //  align-items: center;
+} */
+
 .collapsed {
   .form__title {
     cursor: pointer;
@@ -40,8 +48,9 @@
     display:flex;
     flex-direction: row-reverse;
     justify-content: center;
-    padding: 30px 40px;
-    margin-bottom: 40px;
+    padding-top: 60px; 
+    padding-inline: 40px; // izda/dcha
+    padding-bottom: 80px;
     gap: 30px;
   }
 }

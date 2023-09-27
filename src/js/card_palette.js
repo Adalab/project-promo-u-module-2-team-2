@@ -21,6 +21,7 @@ function handleColorOne() {
   card.classList.remove('card--palette5');
   card.classList.remove('card--palette6');
   card.classList.add('card--palette1');
+  data.palette = 1;
   if (card.classList.contains('card--palette1')) {
     pepinoPreview.classList.remove('card__image2');
     pepinoPreview.classList.add('card__image1');
@@ -36,6 +37,7 @@ function handleColorTwo() {
   card.classList.remove('card--palette5');
   card.classList.remove('card--palette6');
   card.classList.add('card--palette2');
+  data.palette = 2;
   if (card.classList.contains('card--palette2')) {
     pepinoPreview.classList.remove('card__image3');
     pepinoPreview.classList.remove('card__image2');
@@ -52,6 +54,7 @@ function handleColorThree() {
   card.classList.remove('card--palette5');
   card.classList.remove('card--palette6');
   card.classList.add('card--palette3');
+  data.palette = 3;
   if (card.classList.contains('card--palette3')) {
     pepinoPreview.classList.remove('card__image3');
     pepinoPreview.classList.remove('card__image1');
@@ -66,6 +69,7 @@ function handleColorFour() {
   card.classList.remove('card--palette5');
   card.classList.remove('card--palette6');
   card.classList.add('card--palette4');
+  data.palette = 4;
   if (card.classList.contains('card--palette4')) {
     pepinoPreview.classList.remove('card__image2');
     pepinoPreview.classList.remove('card__image1');
