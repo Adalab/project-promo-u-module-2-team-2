@@ -32,8 +32,8 @@
       
             <section class="card js_card"> <!-- card--palette aparece aquí -->
               
-              <button class="button__card">
-                <a class="button__card--link" href="creatingCard.html"><i class="button__card--icon fa-regular fa-trash-can"></i>reset
+              <button class="button__card js_buttonReset">
+                <a class="button__card--link" href=""><i class="button__card--icon fa-regular fa-trash-can"></i>reset
               </a></button>
             
 
@@ -92,8 +92,14 @@
               <!-- form__design -> display: none -->
               <label class="colors__title">colores</label>
               <div class="colors__container">
-                <input type="radio" id="blue" name="palette"
-                 class="color_palette_1" value="1" checked />
+                <input
+                  type="radio"
+                  id="blue"
+                  name="palette"
+                  class="color_palette_1 js_checkReset"
+                  value="1"
+                  checked
+                />
                 <label for="blue" class="colors__palette">
                   <div class="divColors bluePalette"></div>
                   <div class="divColors bluePalette"></div>
@@ -101,8 +107,13 @@
                 </label>
               </div>
               <div class="colors__container">
-                <input type="radio" id="medium" name="palette"
-                 class="color_palette_2" value="2" />
+                <input
+                  type="radio"
+                  id="medium"
+                  name="palette"
+                  class="color_palette_2"
+                  value="2"
+                />
                 <label for="medium" class="colors__palette">
                   <div class="divColors mediumPalette"></div>
                   <div class="divColors mediumPalette"></div>
@@ -110,8 +121,13 @@
                 </label>
               </div>
               <div class="colors__container">
-                <input type="radio" id="orange" name="palette"
-                class="color_palette_3" value="3" />
+                <input
+                  type="radio"
+                  id="orange"
+                  name="palette"
+                  class="color_palette_3"
+                  value="3"
+                />
                 <label for="orange" class="colors__palette">
                   <div class="divColors orangePalette"></div>
                   <div class="divColors orangePalette"></div>
@@ -119,15 +135,20 @@
                 </label>
               </div>
               <div class="colors__container">
-                <input type="radio" id="neutral" name="palette"
-                class="color_palette_4" value="4" />
+                <input
+                  type="radio"
+                  id="neutral"
+                  name="palette"
+                  class="color_palette_4"
+                  value="4"
+                />
                 <label for="neutral" class="colors__palette">
                   <div class="divColors neutralPalette"></div>
                   <div class="divColors neutralPalette"></div>
                   <div class="divColors neutralPalette"></div>
                 </label>
               </div>
-          <!--     <div class="colors__container">
+              <!--     <div class="colors__container">
                 <input type="radio" id="forest" name="palette" 
                 class="color_palette_5" value="5" />
                 <label for="forest" class="colors__palette">
@@ -179,9 +200,9 @@
                 Puesto
                 <input
                   class="form__input js_job_input"
-                  id="position"
+                  id="job"
                   type="text"
-                  name="position"
+                  name="job"
                   placeholder="Ej: Front-end unicorn"
                   required
                 />
@@ -197,14 +218,13 @@
                   class="btnPic js__profile-upload-btn action__hiddenField"
                   id="photo"
                   type="file"
+                  name="photo"
                   value="Añadir imagen"
                 />
                 <div class="square">
                   <div
                     class="profile__image js__profile-image"
-                    style="
-                      background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-                    "
+                    style="background-image: '';"
                   ></div>
                 </div>
               </div>
@@ -228,9 +248,9 @@
                 Teléfono
                 <input
                   class="form__input js_phone_input"
-                  id="telephone"
+                  id="phone"
                   type="tel"
-                  name="telephone"
+                  name="phone"
                   pattern="^(\(?(\+34|0034)\)?)?(6|7|8|9)(\d{8})$"
                   placeholder="Ej: 555-55-55-55"
                   required
@@ -277,23 +297,26 @@
             </legend>
             <div class="form__share js-currentTargetCreated">
               <!-- form__share -> display: none -->
-              <button class="btnCreated js-btnCreated">
+              <button class="btnCreated js-btnCreated js_shareBtn">
                 <span class="btnCreated__icon fa-regular fa-address-card"></span>
                 crear tarjeta
               </button>
+              <p class="js_messageBox"></p>
               <span class="hr"></span>
-              <article class="cardCreated js-hidden">
+              <article class="cardCreated js-hidden js_shareBox">
                 <div class="">
                   <h2 class="cardCreated__title">La tarjeta ha sido creada:</h2>
                   <a
-                    class="cardCreated__link"
+                    class="cardCreated__link js_cardLink"
                     href="https://awesome-profile-card.com?id=A456DF0001"
                   >
                     https://awesome-profile-card.com?id=A456DF0001
                   </a>
                 </div>
                 <div class="cardCreated__btn">
-                  <span class="cardCreated__btn__icon fa-brands fa-x-twitter"></span>
+                  <span
+                    class="cardCreated__btn__icon fa-brands fa-x-twitter js_twitterLink"
+                  ></span>
                   Compartir en twitter
                 </div>
               </article>
@@ -306,8 +329,10 @@
     </main>
 
     <footer class="footer">
-          <p class="footer__p">Awesome profile-cards @2023</p>
-          <img src="./assets/images/logo-adalab.png"alt="logo-adalab" class="footer__img" />
+          <div class="footer__center">
+              <p class="footer__p">Awesome profile-cards @2023</p>
+              <img src="./assets/images/logo-adalab.png"alt="logo-adalab" class="footer__img" />
+          </div>
       </footer>
 
 
