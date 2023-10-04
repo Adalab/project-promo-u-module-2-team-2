@@ -29,7 +29,23 @@ let data = {
 
 // Funciones
 function updatePreview() {
+
+  namePreviewTitle.innerHTML = data.name.replace('<', '');
+  jobPreviewTitle.innerHTML = data.job.replace('<', '');
+  phonePreviewLink.href = `tel:${data.phone}`;
+  emailPreviewLink.href = `mailto:${data.email}`;
+  linkedinPreviewLink.href = `https://${data.linkedin}`;
+  githubPreviewLink.href = `https://github.com/${data.github.slice(1)}`;
+  /* previewPhoto.src = data.photo; */
+
   if (data.name === '') {
+    namePreviewTitle.innerHTML = 'Nombre Apellido';
+  }
+  if (data.job === '') {
+    jobPreviewTitle.innerHTML = 'Front-end developer';
+  }
+
+/*   if (data.name === '') {
     namePreviewTitle.innerHTML = 'Nombre Apellido';
   } else {
     namePreviewTitle.innerHTML = data.name;
@@ -45,11 +61,19 @@ function updatePreview() {
   phonePreviewLink.href = data.phone;
   linkedinPreviewLink.href = 'https://linkedin.com/in/' + data.linkedin;
   githubPreviewLink.href = 'https://github.com/' + data.github;
-  console.log('data', data);
+  console.log('data', data); */
+
 }
 
 // Funciones eventos
-function handleInputName() {
+function handleInputForm(event) {
+  if (event.target.name !== 'photo') {
+    data[event.target.name] = event.target.value;
+    updatePreview();
+  }
+  else{data[event.target.name] = event.target.files[0];}
+}
+/* function handleInputName() {
   data.name = nameInput.value;
   updatePreview();
 }
@@ -76,15 +100,16 @@ function handleInputLinkedin() {
 function handleInputGithub() {
   data.github = githubInput.value;
   updatePreview();
-}
+} */
 
 //Eventos
-nameInput.addEventListener('input', handleInputName);
+form.addEventListener('input', handleInputForm);
+/* nameInput.addEventListener('input', handleInputName);
 jobInput.addEventListener('input', handleInputJob);
 emailInput.addEventListener('input', handleInputEmail);
 phoneInput.addEventListener('input', handleInputPhone);
 linkedinInput.addEventListener('input', handleInputLinkedin);
-githubInput.addEventListener('input', handleInputGithub);
+githubInput.addEventListener('input', handleInputGithub); */
 
 //share
 
@@ -108,8 +133,11 @@ if (data !== null) {
 
  */
 
-function handleClickShareBtn() {
+function handleClickShareBtn(event) {
+  event.preventDefault();
+
   console.log(data);
+  
   fetch('https://dev.adalab.es/api/card/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -120,27 +148,68 @@ function handleClickShareBtn() {
       (responseJSON) => {
         // console.log(responseJSON);
         //data = responseJSON;
+
         if (responseJSON.success === false) {
           messageBox.innerHTML = 'Tienes que rellenar todos los datos, amiga.'; // mensaje de error
+          if (responseJSON.error === 'Database error: ER_DATA_TOO_LONG') {
+            alert('Imagen demasiado grande, prueba con una de menos de 40kb');
+            return;
+          }
         } else if (responseJSON.success === true) {
           shareBox.classList.remove('js-hidden');
           cardLink.href = responseJSON.cardURL; // el link
           cardLink.innerHTML = responseJSON.cardURL; // lo que se ve
-          //data = dataLS;
+          twitterLink.href =
+          'https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20con%20AwesomeCards%20,%20puedes%20verla%20en%20este%20link%20:&url=' +
+          responseJSON.cardURL;
+          localStorage.setItem('dataForm', JSON.stringify(data));
         }
-        dataLS = data;
+        //dataLS = data;
       }
-      //aquí
     );
 
-  localStorage.setItem('pepinos', JSON.stringify(data));
+  //localStorage.setItem('pepinos', JSON.stringify(data));
 }
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  // para que al hacer click no se envíen los datos del formulario
-  // mejor colocárselo al form que al shareBtn para que al escribir
-  // en los inputs no se envíe al servidor
-});
+function renderLocalStorage(){
+  console.log('va bien render?');
+/*   palette.value = data.palette; */
+  nameInput.value = data.name;
+  jobInput.value = data.job;
+  //inputPhoto.value = data.photo;
+  console.log('va bien render2');
+  emailInput.value = data.email;
+  phoneInput.value = data.phone;
+  linkedinInput.value = data.linkedin;
+  githubInput.value = data.github;
+  namePreviewTitle.innerHTML = data.name;
+  jobPreviewTitle.innerHTML = data.job;
+  emailPreviewLink.href = data.email;
+  phonePreviewLink.href = data.phone;
+  linkedinPreviewLink.href = data.linkedin;
+  githubPreviewLink.href = data.github;
+  profileImage.style.backgroundImage = data.photo;
+  profilePreview.style.backgroundImage = data.photo;
+}
+
+function getLocalStorage(){
+  console.log('va bien?');
+  let storedData = JSON.parse(localStorage.getItem('dataForm'));
+
+  if (storedData) {
+    console.log(storedData);
+    data = storedData;
+    renderLocalStorage();
+
+    // eslint-disable-next-line no-undef
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      // para que al hacer click no se envíen los datos del formulario
+      // mejor colocárselo al form que al shareBtn para que al escribir
+      // en los inputs no se envíe al servidor
+    });
+  }
+}
 
 shareBtn.addEventListener('click', handleClickShareBtn);
+window.addEventListener('load', getLocalStorage);
