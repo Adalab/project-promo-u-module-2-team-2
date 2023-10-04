@@ -159,8 +159,7 @@ function handleClickShareBtn(event) {
           shareBox.classList.remove('js-hidden');
           cardLink.href = responseJSON.cardURL; // el link
           cardLink.innerHTML = responseJSON.cardURL; // lo que se ve
-          twitterLink.href =
-          'https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20con%20AwesomeCards%20,%20puedes%20verla%20en%20este%20link%20:&url=' +
+          // twitterLink.href = 'https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20con%20AwesomeCards%20,%20puedes%20verla%20en%20este%20link%20:&url=' +
           responseJSON.cardURL;
           localStorage.setItem('dataForm', JSON.stringify(data));
         }
