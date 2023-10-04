@@ -150,7 +150,7 @@
         color: $color-dark-green-blue;
         font-family: $font-montse;
         font-size: 1.8rem;
-        border-left: solid $color-dirty-blue 0.4rem;
+        border-left: solid $color-dirty-blue 0.5rem;
         padding-left: 1rem;
         font-weight: $bold;
     }
@@ -159,7 +159,7 @@
         color: $color-gunmetal;
         font-family: $font-montse;
         font-size: 1.6rem;
-        border-left: solid $color-dirty-blue 0.4rem;
+        border-left: solid $color-dirty-blue 0.5rem;
         padding-left: 1rem;
     }
     
@@ -204,27 +204,21 @@
         padding-left: 1.75rem;
     }
     
-    .card__icons--icon {
-        color: $color-dark-green-blue;
-        display: flex;
-        width: 3rem;
-        height: 3rem;
-        font-size: $medium;
-        align-items: center;
-        border: solid $color-hospital-green 0.275rem;
-        border-radius: 50%;
-        padding-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-left: 0.75rem;
-        padding-left: 0.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-             
-        
-    }
+   
 
     .card__icon-link {
         text-decoration: none;
+        color: $color-dark-green-blue;
+        display: flex;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
+        align-items: center;
+        border: solid $color-hospital-green 0.275rem;
+        border-radius: 50%;
+        margin-left: 0.75rem;
     }
+    
     
     
