@@ -31,7 +31,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  //console.log(fr.result);
+  //(fr.result);
   data.photo = fr.result;
 }
 

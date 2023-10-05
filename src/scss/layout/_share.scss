@@ -40,7 +40,8 @@
     text-decoration: none;
   }
 
-  &__btn {
+  /* twitter */
+  &__btn { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,11 +56,18 @@
     text-decoration: none;
     font-size: $medium;
     box-shadow: $box-shadow;
+    border: none;
+    cursor: pointer;
 
     &__icon {
-      font-size: $large;
+      font-size: $medium; //$large
     }
   }
+}
+
+.fa-x-twitter{
+  font-size: $large;
+  margin-right: .6rem;
 }
 
 .hr{

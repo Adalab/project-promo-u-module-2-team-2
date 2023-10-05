@@ -34,8 +34,8 @@ function updatePreview() {
   jobPreviewTitle.innerHTML = data.job.replace('<', '');
   phonePreviewLink.href = `tel:${data.phone}`;
   emailPreviewLink.href = `mailto:${data.email}`;
-  linkedinPreviewLink.href = `https://${data.linkedin}`;
-  githubPreviewLink.href = `https://github.com/${data.github.slice(1)}`;
+  linkedinPreviewLink.href = `https://linkedin.com/in/${data.linkedin}`;
+  githubPreviewLink.href = `https://github.com/${data.github}`;
   /* previewPhoto.src = data.photo; */
 
   if (data.name === '') {
@@ -44,24 +44,6 @@ function updatePreview() {
   if (data.job === '') {
     jobPreviewTitle.innerHTML = 'Front-end developer';
   }
-
-/*   if (data.name === '') {
-    namePreviewTitle.innerHTML = 'Nombre Apellido';
-  } else {
-    namePreviewTitle.innerHTML = data.name;
-  }
-
-  if (data.job === '') {
-    jobPreviewTitle.innerHTML = 'Front-end Developer';
-  } else {
-    jobPreviewTitle.innerHTML = data.job;
-  }
-
-  emailPreviewLink.href = 'mailto:' + data.email;
-  phonePreviewLink.href = data.phone;
-  linkedinPreviewLink.href = 'https://linkedin.com/in/' + data.linkedin;
-  githubPreviewLink.href = 'https://github.com/' + data.github;
-  console.log('data', data); */
 
 }
 
@@ -73,43 +55,9 @@ function handleInputForm(event) {
   }
   else{data[event.target.name] = event.target.files[0];}
 }
-/* function handleInputName() {
-  data.name = nameInput.value;
-  updatePreview();
-}
-
-function handleInputJob() {
-  data.job = jobInput.value;
-  updatePreview();
-}
-
-function handleInputEmail() {
-  data.email = emailInput.value;
-  updatePreview();
-}
-
-function handleInputPhone() {
-  data.phone = phoneInput.value;
-  updatePreview();
-}
-
-function handleInputLinkedin() {
-  data.linkedin = linkedinInput.value;
-  updatePreview();
-}
-function handleInputGithub() {
-  data.github = githubInput.value;
-  updatePreview();
-} */
 
 //Eventos
 form.addEventListener('input', handleInputForm);
-/* nameInput.addEventListener('input', handleInputName);
-jobInput.addEventListener('input', handleInputJob);
-emailInput.addEventListener('input', handleInputEmail);
-phoneInput.addEventListener('input', handleInputPhone);
-linkedinInput.addEventListener('input', handleInputLinkedin);
-githubInput.addEventListener('input', handleInputGithub); */
 
 //share
 
@@ -119,25 +67,11 @@ const shareBox = document.querySelector('.js_shareBox'); // Donde se encuentra e
 const cardLink = document.querySelector('.js_cardLink'); // donde se encuentra el enlace
 const twitterLink = document.querySelector('.js_twitterLink');
 
-/*
-let data = '';*/
-let dataLS = [];
-
-/**
- * data = JSON.parse(localStorage.getItem('pepinos'));
-if (data !== null) {
-  console.log('Tiene datos');
-} else {
-  console.log('No tiene datos');
-}
-
- */
 
 function handleClickShareBtn(event) {
   event.preventDefault();
 
-  console.log(data);
-  
+  //(data);
   fetch('https://dev.adalab.es/api/card/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -146,7 +80,7 @@ function handleClickShareBtn(event) {
     .then((response) => response.json())
     .then(
       (responseJSON) => {
-        // console.log(responseJSON);
+        // (responseJSON);
         //data = responseJSON;
 
         if (responseJSON.success === false) {
@@ -159,24 +93,16 @@ function handleClickShareBtn(event) {
           shareBox.classList.remove('js-hidden');
           cardLink.href = responseJSON.cardURL; // el link
           cardLink.innerHTML = responseJSON.cardURL; // lo que se ve
-          // twitterLink.href = 'https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20con%20AwesomeCards%20,%20puedes%20verla%20en%20este%20link%20:&url=' +
-          responseJSON.cardURL;
+          twitterLink.href = 'https://twitter.com/intent/tweet?text=%C2%A1Creado%20con%20AwesomeCards!%20(crea%20la%20tuya%20en%20http%3A%2F%2Fbeta.adalab.es%2Fproject-promo-u-module-2-team-2%2F)%20Ver%20tarjeta%3A&url=' + responseJSON.cardURL;
           localStorage.setItem('dataForm', JSON.stringify(data));
         }
-        //dataLS = data;
       }
     );
-
-  //localStorage.setItem('pepinos', JSON.stringify(data));
 }
 
 function renderLocalStorage(){
-  console.log('va bien render?');
-/*   palette.value = data.palette; */
   nameInput.value = data.name;
   jobInput.value = data.job;
-  //inputPhoto.value = data.photo;
-  console.log('va bien render2');
   emailInput.value = data.email;
   phoneInput.value = data.phone;
   linkedinInput.value = data.linkedin;
@@ -192,11 +118,9 @@ function renderLocalStorage(){
 }
 
 function getLocalStorage(){
-  console.log('va bien?');
   let storedData = JSON.parse(localStorage.getItem('dataForm'));
 
   if (storedData) {
-    console.log(storedData);
     data = storedData;
     renderLocalStorage();
 
